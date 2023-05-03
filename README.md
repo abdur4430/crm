@@ -10,11 +10,12 @@ This is a web application for managing students of a university. It allows you t
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
 3. Install the required dependencies with the command `npm install`.
-4.
 
 ## Usage
-1. Run the application with the command `npm start`.
+1. Run the application with the command on frontend folder `npm start`.
 2. Open a web browser and navigate to `http://localhost:3000`.
+3. For start backend api run the command `node index` in backend folder.
+
 3. The application will display a table of all students in the database.
 4. To add a student, fill in the form at the top of the page and click "Add student".
 5. To delete a student, click the "Delete" button next to their name in the table.
