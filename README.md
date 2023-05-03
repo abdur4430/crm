@@ -12,7 +12,7 @@ This is a web application for managing students of a university. It allows you t
 3. Install the required dependencies with the command `npm install`.
 
 ## Usage
-1. Run the application with the command on frontend folder `npm start`.
+1. Run index.html on frontend folder file to start the application.
 2. Open a web browser and navigate to `http://localhost:3000`.
 3. For start backend api run the command `node index` in backend folder.
 
