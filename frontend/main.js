@@ -44,14 +44,14 @@
     const finishLearn = Number(studentObj.studyStart) + 4;
 
     deleteButton.classList.add('btn', 'btn-danger');
-    deleteButton.textContent = 'Удалить';
+    deleteButton.textContent = 'Delete';
 
     if (Number(studentObj.studyStart) + 4 > thisDate.getFullYear()) {
       cellLearning.textContent = `${studyStart}-${finishLearn} (${thisDate.getFullYear() - studyStart} Курс)`;
     } else if (thisDate.getMonth() < 8 && thisDate.getFullYear() === finishLearn) {
       cellLearning.textContent = `${studyStart}-${finishLearn} (4 Курс)`;
     } else {
-      cellLearning.textContent = `${studyStart}-${finishLearn} (Закончил)`;
+      cellLearning.textContent = `${studyStart}-${finishLearn} (Finished)`;
     }
 
     cellFullname.textContent = studentObj.surname + ' ' + studentObj.name + ' ' + studentObj.lastname;

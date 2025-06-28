@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Список студентов</title>
+    <title>List of Students</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,49 +24,49 @@
     <div class="app__container container">
       <div class="app__add mb-5">
         <form class="add__form row g-3 needs-validation" novalidate>
-          <h2 class="add_subtitle">Добавить Студента</h2>
+          <h2 class="add_subtitle"></h2>
           <div class="add__name name col-md-4">
             <label for="addName" class="name__label form-label">Имя</label>
             <input
               type="text"
               class="name__input form-control"
               id="addName"
-              placeholder="Иван"
+              placeholder="name"
               required
             />
-            <div class="name__valid invalid-feedback">Укажите Имя.</div>
+            <div class="name__valid invalid-feedback">invalid feedback.</div>
           </div>
           <div class="add_surname surname col-md-4">
             <label for="addSurname" class="surname__label form-label"
-              >Фамилия</label
+              >surname</label
             >
             <input
               type="text"
               class="surname__input form-control"
               id="addSurname"
-              placeholder="Иванов"
+              placeholder="surname"
               required
             />
             <div class="surname__valid invalid-feedback">Укажите фамилию.</div>
           </div>
           <div class="add__fathername fathername col-md-4">
             <label for="addFathername" class="fathername__label form-label"
-              >Отчество</label
+              >fathername</label
             >
             <input
               type="text"
               class="fathername__input form-control"
               id="addFathername"
-              placeholder="Иванович"
+              placeholder="fathername"
               required
             />
             <div class="fathername__valid invalid-feedback">
-              Укажите отчество.
+              invalid-feedback.
             </div>
           </div>
           <div class="add__birth birth col-md-4">
             <label for="addBoD" class="birth__label form-label"
-              >Дата рождения</label
+              >birthday</label
             >
             <input
               type="date"
@@ -76,12 +76,12 @@
               required
             />
             <div class="birth__valid invalid-feedback">
-              Укажите дату рождения.
+              Please specify your date of birth.
             </div>
           </div>
           <div class="add__receipt receipt col-md-4">
             <label for="addReceipt" class="receipt__label form-label"
-              >Год поступления</label
+              >Year of admission</label
             >
             <input
               type="number"
@@ -93,12 +93,12 @@
               required
             />
             <div class="receipt__valid invalid-feedback">
-              Укажите год поступления.
+              Please specify your year of admission.
             </div>
           </div>
           <div class="add__faculty faculty col-md-4">
             <label for="addFaculty" class="faculty__label form-label"
-              >Факультет</label
+              >Specify your faculty</label
             >
             <input
               type="text"
@@ -108,25 +108,25 @@
               required
             />
             <div class="faculty__valid invalid-feedback">
-              Укажите факультет.
+              invalid faculty.
             </div>
           </div>
           <div class="add__btncol-12">
             <button class="btn btn-primary" type="submit">
-              Добавить студента
+              submit
             </button>
           </div>
         </form>
       </div>
       <div class="app__filter filter mb-5">
         <form class="filter__form row g-3 needs-validation" novalidate>
-          <h3 class="filter_subtitle">Фильтр</h3>
+          <h3 class="filter_subtitle"></h3>
           <div class="filter__fullname fullname col-md-3">
             <input
               type="text"
               class="fullname__input form-control"
               id="filterFullname"
-              placeholder="ФИО"
+              placeholder="filtername"
             />
           </div>
           <div class="filter__start start col-md-3">
@@ -135,9 +135,9 @@
               step="1"
               class="start__input form-control"
               id="filterStart"
-              placeholder="Год начала"
+              placeholder="filter start"
               min="2000"
-              max="2023"
+              max="2026"
             />
           </div>
           <div class="filter__finish finish col-md-3">
@@ -146,7 +146,7 @@
               step="1"
               class="receipt__input form-control"
               id="filterFinish"
-              placeholder="Год окончания"
+              placeholder="Year of graduation"
               min="2000"
               max="2023"
             />
@@ -156,41 +156,41 @@
               type="text"
               class="faculty__input form-control"
               id="filterFaculty"
-              placeholder="Факультет"
+              placeholder="Year of graduation"
             />
           </div>
           <div class="add__btncol-12">
             <button class="btn btn-primary" type="submit">
-              Отфильтровать
+              submit
             </button>
           </div>
         </form>
       </div>
       <div class="app__table table">
         <h2 class="table__title text-center">
-          Список студентов
+          List of students
         </h2>
         <table class="table__main table">
           <thead class="table__head">
             <tr>
               <th id="fullNameSort" scope="col">
                 <a href="#" class="table__link">
-                  Ф. И. О. студента
+                  Full name of the student
                 </a>
               </th>
               <th id="facultySort" scope="col">
                 <a href="#" class="table__link">
-                  Факультет
+                  Faculty
                 </a>
               </th>
               <th id="birthSort" scope="col">
                 <a href="#" class="table__link">
-                  Дата рождения и возраст
+                  "Date of birth and age
                 </a>
               </th>
               <th id="learningSort" scope="col">
                 <a href="#" class="table__link">
-                  Годы обучения и номер курса
+                  Years of study and course number
                 </a>
               </th>
               <th scope="col">
